@@ -1,9 +1,11 @@
 package staticVariable;
 
 public class Student {
+
+    private static int serialNum = 1000;
     private String studentName;
     private int studentID;
-    private static int serialNum = 1000;
+
 
     public Student()
     {
