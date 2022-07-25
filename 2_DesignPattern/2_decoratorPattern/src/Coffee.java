@@ -1,8 +1,7 @@
 public abstract class Coffee{
-    protected String menu = "bean";
+    protected String name;
+    protected int price;
 
-    public String add(){
-        return menu;
-    }
-
+    public abstract String getBean();
+    public abstract int getPrice();
 }

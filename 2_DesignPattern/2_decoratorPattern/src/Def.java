@@ -1,10 +1,16 @@
 public class Def extends Coffee{
     public Def(){
-        this.menu = "Today's bean";
+        this.name = "Today's bean";
+        this.price = 0;
     }
 
     @Override
-    public String add() {
-        return menu + " espresso";
+    public String getBean() {
+        return name;
+    }
+
+    @Override
+    public int getPrice() {
+        return this.price;
     }
 }

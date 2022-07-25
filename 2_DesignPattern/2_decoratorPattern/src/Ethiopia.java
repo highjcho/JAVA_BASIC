@@ -1,10 +1,16 @@
 public class Ethiopia extends Coffee{
     public Ethiopia(){
-        this.menu = "Ethiopia";
+        this.name = "Ethiopia";
+        this.price = 2000;
     }
 
     @Override
-    public String add() {
-        return menu + " espresso";
+    public String getBean() {
+        return name;
+    }
+
+    @Override
+    public int getPrice() {
+        return this.price;
     }
 }
