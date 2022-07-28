@@ -1,18 +1,18 @@
 public class Water extends Menu {
 
-    public Water(Menu decorator) {
+    public Water(Coffee coffee) {
+        super(coffee);
         this.name = "Water";
-        this.decorator = decorator;
         this.price = 1000;
     }
     @Override
-    public String makeCoffee() {
-        return decorator.makeCoffee() + " Adding " + name;
+    public String getCoffee() {
+        return coffee.getCoffee() + " Adding " + name;
     }
 
     @Override
     public int getCost() {
-        return decorator.getCost() + this.price;
+        return coffee.getCost() + this.price;
     }
 
     @Override

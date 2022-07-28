@@ -5,8 +5,13 @@ public class Def extends Coffee{
     }
 
     @Override
-    public String getBean() {
+    public String getCoffee() {
         return name;
+    }
+
+    @Override
+    public int getCost() {
+        return this.price;
     }
 
     @Override

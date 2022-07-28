@@ -1,16 +1,14 @@
 public class Espresso extends Menu {
-    private Coffee coffee;
-
     public Espresso(Coffee coffee)
     {
+        super(coffee);
         this.name = "espresso";
-        this.coffee = coffee;
         this.price = 1000;
     }
 
     @Override
-    public String makeCoffee() {
-        return coffee.getBean() + " " + name;
+    public String getCoffee() {
+        return coffee.getCoffee() + " " + name;
     }
 
     @Override

@@ -1,10 +1,14 @@
-public abstract class Menu {
+public abstract class Menu extends Coffee{
+    protected Coffee coffee;
     protected String name;
-    protected Menu decorator;
     protected int price;
     protected int cost;
 
-    public abstract String makeCoffee();
+    public Menu(Coffee coffee) {
+        this.coffee = coffee;
+    }
+
+    public abstract String getCoffee();
 
     public abstract int getCost();
     public abstract int getPrice();

@@ -1,18 +1,18 @@
 public class Mocha extends Menu {
-    public Mocha(Menu menu) {
+    public Mocha(Coffee coffee) {
+        super(coffee);
         this.name = "Mocha syrup";
-        this.decorator = menu;
         this.price = 500;
     }
 
     @Override
-    public String makeCoffee() {
-        return decorator.makeCoffee() + " Adding " + name;
+    public String getCoffee() {
+        return coffee.getCoffee() + " Adding " + name;
     }
 
     @Override
     public int getCost() {
-        return decorator.getCost() + this.price;
+        return coffee.getCost() + this.price;
     }
 
     @Override

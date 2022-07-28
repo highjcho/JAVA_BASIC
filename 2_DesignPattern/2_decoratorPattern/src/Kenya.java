@@ -5,8 +5,13 @@ public class Kenya extends Coffee{
     }
 
     @Override
-    public String getBean() {
-        return name;
+    public String getCoffee() {
+        return this.name;
+    }
+
+    @Override
+    public int getCost() {
+        return this.price;
     }
 
     @Override
