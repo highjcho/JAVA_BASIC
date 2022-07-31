@@ -5,7 +5,6 @@ public abstract class PlayerLevel {
     public abstract void showLevelMessage();
     final public void go(int time)
     {
-        showLevelMessage();
         System.out.println();
         run();
         for (int i = 0; i < time; i++) {

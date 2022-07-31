@@ -6,6 +6,7 @@ public class Player {
 
     public Player() {
         this.level = new BeginnerLevel();
+        this.level.showLevelMessage();
     }
 
     public void upgradeLevel(int level)
@@ -14,6 +15,7 @@ public class Player {
             this.level = new AdvancedLevel();
         else if (level == SUPER_LEVEL)
             this.level = new SuperLevel();
+        this.level.showLevelMessage();
     }
 
     public void play(int time)
