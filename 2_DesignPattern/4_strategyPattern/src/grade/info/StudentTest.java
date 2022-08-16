@@ -31,14 +31,7 @@ public class StudentTest {
 
     private static void createStudent() {
         studentLee = new Student(1001, "Lee");
-        studentLee.addSubject("국어", 100, Define.BASIC);
-        studentLee.addSubject("수학", 100, Define.MAJOR);
-        studentLee.addSubject("축구", 60, Define.PF);
         studentKim = new Student(1002, "Kim");
-        studentKim.addSubject("국어", 55, Define.MAJOR);
-        studentKim.addSubject("수학", 55, Define.BASIC);
-        studentKim.addSubject("영어", 100, Define.BASIC);
-        studentKim.addSubject("축구", 80, Define.PF);
     }
 
     private static void createSubject() {
@@ -50,6 +43,13 @@ public class StudentTest {
 
     public static void registerStudent()
     {
+        studentLee.addSubject("국어", 100, Define.BASIC);
+        studentLee.addSubject("수학", 100, Define.MAJOR);
+        studentLee.addSubject("축구", 60, Define.PF);
+        studentKim.addSubject("국어", 55, Define.MAJOR);
+        studentKim.addSubject("수학", 55, Define.BASIC);
+        studentKim.addSubject("영어", 100, Define.BASIC);
+        studentKim.addSubject("축구", 80, Define.PF);
         korean.register(studentLee);
         korean.register(studentKim);
         math.register(studentLee);
